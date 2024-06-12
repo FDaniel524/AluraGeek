@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Alura Geek</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/stylo.css">
+    <link rel="shortcut icon" href="media/icono.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiny5&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <img src="media/cabecera.png" class="cabeceraAluraGeek">
+    </header>
+    <main>
+        <div class="cuerpoAluraGeek">
+            <section class="misProductos">
+                <h1>Mis productos:</h1>
+                <div class="cardContainer" data-lista>
+                    
+                </div>
+            </section>
+            <section class="agregarProducto">
+                <h1>Agregar producto:</h1>
+                <form data-formulario>
+                    <input type="text" placeholder="nombre..." name="nombre" id="nombre" data-nombre>
+                    <input type="text" placeholder="precio..." name="precio" id="precio" data-precio>
+                    <input type="text" placeholder="imagen..." name="imagen" id="imagen" data-imagen>
+                    <button class="btnAgregarProducto" id="agregarItem" type="submit">Enviar</button>
+                    <button class="btnAgregarProducto" id="limpiarItem" type="reset">Limpiar</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <img src="media/footer.png" class="creditos">
+    </footer>
+    <script src="js/mostrarProductos.js" type="module"></script>
+    <script src="js/crearProductos.js" type="module"></script>
+</body>
+</html>
