@@ -1,0 +1,40 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "titulo": "Gameboy",
+      "precio": "$900.00",
+      "imagen": "http://127.0.0.1:5500/media/gameboy.jpg"
+    },
+    {
+      "id": 2,
+      "titulo": "Nintendo NES",
+      "precio": "$1,200.00",
+      "imagen": "http://127.0.0.1:5500/media/nes.jpg"
+    },
+    {
+      "id": 3,
+      "titulo": "Super NES",
+      "precio": "$1,700.00",
+      "imagen": "http://127.0.0.1:5500/media/snes.jpg"
+    },
+    {
+      "id": 4,
+      "titulo": "Tetris",
+      "precio": "$100.00",
+      "imagen": "http://127.0.0.1:5500/media/tetris.jpg"
+    },
+    {
+      "id": 5,
+      "titulo": "Sega Jupiter",
+      "precio": "$1,100.00",
+      "imagen": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Sega-Genesis-Model2-32X.png"
+    },
+    {
+      "id": "b26a",
+      "titulo": "Nintendo 64",
+      "precio": "$1,500.00",
+      "imagen": "https://www.museodelvideojuego.com/files/imgs/consolas/Nintendo-64-Gold.jpg"
+    }
+  ]
+}
