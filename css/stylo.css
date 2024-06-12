@@ -1,0 +1,240 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: "Tiny5", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1
+{
+    font-size: 44px;
+}
+
+header, footer
+{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justiy-content: center;
+    overflow: hidden;
+}
+
+.cabeceraAluraGeek
+{
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.cuerpoAluraGeek
+{
+    display: flex;
+    flex-flow: wrap row;
+    width: 96%;
+    height: 70vh;
+    max-height: 76vh;
+    
+    justify-content: space-around;
+    border: 2px #5D0D49 solid;
+    border-radius: 10px;
+    margin: 10px auto;
+}
+
+.cuerpoAluraGeek h1
+{
+    text-align: center;
+    width: 100%;
+}
+
+.misProductos
+{
+    display: flex;
+    flex-flow: row wrap;
+    width: 55%;
+    height: 55vh; 
+    max-height: 60vh; /*Sé que el limite son 50vh, pero en mi PC (Chromebook G3110, la visualización me era incómoda)*/
+    margin: auto 10px;
+    box-shadow: -10px 8px 8px #ABABAB;
+    overflow: scroll;
+    justify-content: space-around;
+}
+
+.cardContainer
+{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.card
+{
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+    margin: 9px 0;
+    border: 2px black solid;
+    border-radius: 10px;
+    background: #03318C;
+    justify-content: center;
+    color: white;
+    font-family: sans-serif;
+}
+
+.imagenProducto
+{
+    width: 90%;
+    height: 180px;
+    display: flex;
+    margin: 8px auto;
+
+    border: 2px black solid;
+    border-radius: 10px;
+}
+
+.nombreProducto
+{
+    display: flex;
+    width: 100%;
+    font-size: 20px;
+    padding: 0 10px;
+    word-wrap: break-word;
+}
+
+.cardContainerPrecio
+{
+    display: flex;
+    width: 100%;
+    flex-flow: row nowrap;
+    padding: 0 10px;
+    margin: 10px auto;
+
+    font-size: 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.iconoEliminar
+{
+    width: 15%;
+    height: auto;
+    transition: all 0.4s ease-out;
+}
+
+.iconoEliminar:hover
+{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.agregarProducto
+{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    margin: auto 10px;
+}
+
+form
+{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: space-between;;
+}
+
+input[type='text']
+{
+    displa: flex;
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    border: 2px #0331BC solid;
+    border-radius: 50px;
+    margin: 10px 0;
+}
+
+.btnAgregarProducto
+{
+    font-size: 24px;
+    display: flex;
+    padding: 10px;
+    width: 48%;
+    justify-content: center;
+    background: white;
+    border: 2px #0331BC solid;
+    border-radius: 10px;
+    color: #0331BC;
+}
+
+#agregarItem
+{
+    color: white;
+    background: #0331BC;
+}   
+    
+.creditos
+{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+@media (max-width: 768px)
+{
+    .cabeceraAluraGeek, .creditos
+    {
+        width: 200%;
+        height: auto;
+        margin: 0;
+        transform: translate(-50%,0);
+        margin-left: 50vw;
+    }
+    .cuerpoAluraGeek
+    {
+        display: flex;
+        flex-flow: wrap column-reverse;
+        width: 96%;
+        height: auto;
+        max-height: none;
+    }
+
+    .misProductos
+    {
+        display: flex;
+        flex-flow: row wrap;
+        width: 96%;
+        height: 70vh; 
+        max-height: 70vh; /*Sé que el limite son 50vh, pero en mi PC (Chromebook G3110, la visualización me era incómoda)*/
+        margin: 20px 10px;
+        box-shadow: none;
+    }
+
+    .agregarProducto
+    {
+        display: flex;
+        flex-direction: column;
+        width: 96%;
+        margin: auto 10px;
+    }
+
+    form
+    {
+        display: flex;
+        flex-flow: row wrap;
+        margin: auto;
+        width: 90%;
+    }
+
+    .card
+    {
+        display: flex;
+        flex-direction: column;
+        width: 48%;
+    }
+}
